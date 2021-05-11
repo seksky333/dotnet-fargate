@@ -1,5 +1,6 @@
 {
     "executionRoleArn": "arn:aws:iam::245627452132:role/ecsTaskExecutionRole",
+    "taskRoleArn": "arn:aws:iam::245627452132:role/ecsTaskExecutionRole",
     "family": "sample-fargate", 
     "networkMode": "awsvpc", 
     "containerDefinitions": [
@@ -23,14 +24,6 @@
             ]
         }
     ], 
-    "placementConstraints": [],
-    "memory": "512",
-    "taskRoleArn": "arn:aws:iam::245627452132:role/ecsTaskExecutionRole",
-    "taskRoleArn": null,
-    "compatibilities": [
-      "EC2",
-      "FARGATE"
-    ],    
     "requiresCompatibilities": [
         "FARGATE"
     ], 
