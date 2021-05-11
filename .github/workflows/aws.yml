@@ -28,7 +28,7 @@ on:
         branches: [main]
     # Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
-    
+
 name: Deploy to Amazon ECS
 
 jobs:
@@ -70,7 +70,7 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: task-def.json
+        task-definition: indicium-databus-def.json
         container-name: fargate-app
         image: ${{ steps.build-image.outputs.image }}
 
